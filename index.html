@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кораблестроение Руси</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Кораблестроение Руси</h1>
+        <nav>
+            <ul>
+              <li><a href="#introduction">Введение</a></li>
+              <li><a href="#chapter1">Корабли IX–X веков: время Олега</a></li>
+              <li><a href="#chapter2">Развитие кораблестроения в XI–XIII веках</a></li>
+              <li><a href="#chapter3">Торговый транспорт XIV–XV веков</a></li>
+              <li><a href="#chapter4">Состояние кораблестроения на рубеже XVI–XVII веков</a></li>
+              <li><a href="#team">Участники проекта</a></li>
+            </ul>
+          </nav>
+          
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Введение</h2>
+            <p>Кораблестроение играло важнейшую роль в истории Руси, развиваясь вместе с торговлей и военными нуждами.</p>
+            <img src="images/slavic-settlement.jpg" alt="Славянское поселение с лодками">
+        </section>
+
+        <section id="early-ships">
+            <h2>Корабли IX–X веков</h2>
+            <p>Ладьи и военные суда этого периода широко использовались в походах, таких как знаменитый поход Олега на Царьград.</p>
+            <img src="images/slavic-warship.jpg" alt="Ладья IX века">
+        </section>
+
+        <section id="development">
+            <h2>Развитие XI–XIII века</h2>
+            <p>Изменения в конструкции судов и влияние Византии укрепили русское кораблестроение.</p>
+            <img src="images/ship-construction.jpg" alt="Конструкция судна XI века">
+        </section>
+
+        <section id="trade-ships">
+            <h2>Торговый транспорт XIV–XV веков</h2>
+            <p>Река Волга и другие водные пути стали основой экономики Руси, поддерживаемой ладьями и стругами.</p>
+            <img src="images/volga-trade.jpg" alt="Торговый караван на Волге">
+        </section>
+
+        <section id="state">
+            <h2>Состояние кораблестроения XVI–XVII веков</h2>
+            <p>Судостроение находилось в стадии застоя, но эпоха Алексея Михайловича стала началом реформ.</p>
+            <img src="images/shipyard.jpg" alt="Верфь XVI века">
+        </section>
+
+        <section id="conclusion">
+            <h2>Заключение</h2>
+            <p>Корабли играли важную роль в военной, торговой и экономической жизни Руси.</p>
+            <img src="images/end.jpg" alt="Коллаж кораблей разных эпох">
+        </section>
+
+        <section id="3d-model">
+            <section id="3d-model">
+                <h2>Модель корабля</h2>
+                <model-viewer src="models/ship.glb" 
+                              ar ar-modes="webxr scene-viewer quick-look" 
+                              camera-controls 
+                              tone-mapping="neutral" 
+                              poster="poster.webp" 
+                              shadow-intensity="1" 
+                              camera-orbit="-677.1deg 76.4deg 1583m" 
+                              field-of-view="30deg">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <div id="ar-prompt">
+                    </div>
+                </model-viewer>
+            </section>
+            
+            
+        </section>
+
+        <section id="team">
+            <h2>Участники проекта</h2>
+            <ul class="team-list">
+                <li class="team-member">
+                    <img src="avatar-images/AnastasiaPetrova.jpg" alt="Петрова Анастасия Павловна" class="avatar">
+                    <span>Петрова Анастасия Павловна</span>
+                </li>
+                <li class="team-member">
+                    <img src="avatar-images/DariaAbrosimova.jpg" alt="Абросимова Дарья Константиновна" class="avatar">
+                    <span>Абросимова Дарья Константиновна</span>
+                </li>
+                <li class="team-member">
+                    <img src="avatar-images/VeronikaMezentseva.jpg" alt="Мезенцева Вероника Денисовна" class="avatar">
+                    <span>Мезенцева Вероника Денисовна</span>
+                </li>
+                <li class="team-member">
+                    <img src="avatar-images/KiraVandysheva.jpg" alt="Вандышева Кира Витальевна" class="avatar">
+                    <span>Вандышева Кира Витальевна</span>
+                </li>
+                <li class="team-member">
+                    <img src="avatar-images/MariaUstyantseva.jpg" alt="Устьянцева Мария Евгеньевна" class="avatar">
+                    <span>Устьянцева Мария Евгеньевна</span>
+                </li>
+                <li class="team-member">
+                    <img src="avatar-images/AnastasiaAndreeva.jpg" alt="Андреева Анастасия Андреевна" class="avatar">
+                    <span>Андреева Анастасия Андреевна</span>
+                </li>
+                <li class="team-member">
+                    <img src="avatar-images/ValeriaYakimova.jpg" alt="Якимова Валерия Михайловна" class="avatar">
+                    <span>Якимова Валерия Михайловна</span>
+                </li>
+                <li class="team-member">
+                    <img src="avatar-images/DmitryRazbezhkin.jpg" alt="Разбежкин Дмитрий Вячеславович" class="avatar">
+                    <span>Разбежкин Дмитрий Вячеславович</span>
+                </li>
+            </ul>
+        </section>
+        
+        
+        
+    </main>
+
+    <footer>
+        <p>© 2024. Кораблестроение Руси</p>
+    </footer>
+</body>
+</html>
