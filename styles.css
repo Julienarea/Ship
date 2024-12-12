@@ -1,0 +1,360 @@
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    /* Скрываем значок мобильного телефона */
+    #ar-prompt {
+    display: none;
+    }
+    
+    /* Делаем 3D плеер на весь браузер */
+    model-viewer {
+        display: block;
+        margin: 0 auto;
+        height: 500px; /* задайте фиксированную высоту */
+        width: 100%;
+    }
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    display: flex;
+    justify-self: center;
+    padding: 70px;
+    margin: 0;
+    font-size: 4rem;
+}
+
+/* Стили для навигации */
+nav {
+    padding: 15px 200px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Выравнивание по центру */
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Расстояние между пунктами */
+}
+
+nav li {
+    border-radius: 10px;
+    background: #ffffff12;
+    display: inline-block;
+    padding: 5px;
+    display: flex;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Эффект наведения */
+nav li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+/* Адаптивные стили для небольших экранов */
+@media (max-width: 768px) {
+    /* Уменьшение заголовка */
+    header h1 {
+        font-size: 2rem; /* Уменьшенный размер шрифта */
+        padding: 40px; /* Уменьшенное внутреннее отступление */
+    }
+
+    /* Адаптация навигации */
+    nav {
+        padding: 10px 20px; /* Уменьшенные отступы */
+    }
+
+    nav ul {
+        flex-direction: column; /* Вертикальная навигация */
+        align-items: center; /* Выравнивание по центру */
+        gap: 10px; /* Меньший промежуток между элементами */
+    }
+
+    nav a {
+        font-size: 0.9rem; /* Уменьшенный размер шрифта */
+        padding: 8px 12px; /* Уменьшенные отступы */
+    }
+
+    nav li {
+        padding: 3px; /* Уменьшенные отступы для пунктов меню */
+    }
+}
+
+
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Стили для введения */
+.introduction-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.key-points h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.point-group {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.point-group h4 {
+    color: #3498db;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    position: relative;
+    padding-left: 20px;
+}
+
+.point-group h4::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.point-group ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.point-group ul li {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 15px;
+}
+
+.point-group ul li::before {
+    content: '—';
+    position: absolute;
+    left: -5px;
+    color: #3498db;
+}
+
+.conclusion {
+    font-style: italic;
+    color: #2c3e50;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    #introduction .point-group {
+        padding: 10px;
+    }
+    
+    #introduction .point-group h4 {
+        font-size: 1.1em;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+}
+
+/* Секция участников */
+#team {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#team h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Список участников */
+.team-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Карточка участника */
+.team-member {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Аватары участников */
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #333;
+}
+
+/* Имя участника */
+.team-member span {
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    word-wrap: break-word; /* Перенос слов, если они длинные */
+    word-break: break-word; /* Перенос длинных слов на новой строке */
+    max-width: 100%; /* Ограничивает ширину текста в пределах карточки */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .team-member {
+        width: 120px;
+    }
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+    }
+    /* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Список навигации в столбик */
+        align-items: center;   /* Выравнивание по центру */
+    }
+
+    nav li {
+        margin: 10px 0; /* Увеличение расстояния между пунктами */
+    }
+
+    main {
+        padding: 10px; /* Уменьшение отступов */
+    }
+
+    section img {
+        max-width: 100%; /* Изображения заполняют контейнер */
+        height: auto;
+    }
+
+    .team-list {
+        flex-direction: column; /* Участники проекта в одну колонку */
+        align-items: center;
+    }
+
+    .team-member {
+        margin: 10px 0; /* Отступы между карточками */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem; /* Уменьшение размера заголовка */
+    }
+
+    nav a {
+        font-size: 0.9rem; /* Уменьшение размера текста в меню */
+        padding: 8px;      /* Компактный вид ссылок */
+    }
+
+    section {
+        padding: 10px; /* Уменьшение отступов у секций */
+    }
+
+    .key-points h3 {
+        font-size: 1rem; /* Уменьшение размера подзаголовков */
+    }
+
+    .point-group ul li {
+        font-size: 0.9rem; /* Уменьшение размера текста */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Компактный текст в футере */
+    }
+
+    #team h2 {
+        font-size: 1.5rem; /* Уменьшение заголовка "Участники проекта" */
+    }
+
+    .team-member span {
+        font-size: 0.8rem; /* Компактный текст имени участника */
+    }
+}
+
+}
